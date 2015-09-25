@@ -22,6 +22,7 @@
                                     <h3><a href="#">Course 123</a></h3>
                                     <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
                                     <a class="preview" href="../assets/images/course1.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>
+                                    <button class="btn btn-primary">Enroll</button>
                                 </div> 
                             </div>
                         </div>
@@ -35,6 +36,7 @@
                                     <h3><a href="#">a</a></h3>
                                     <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
                                     <a class="preview" href="../assets/images/course2.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>
+                                    <button class="btn btn-primary">Enroll</button>
                                 </div> 
                             </div>
                         </div>          
@@ -48,6 +50,7 @@
                                     <h3><a href="#">b</a></h3>
                                     <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
                                     <a class="preview" href="../assets/images/course1.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>
+                                    <button class="btn btn-primary">Enroll</button>
                                 </div> 
                             </div>
                         </div>        
@@ -61,6 +64,7 @@
                                     <h3><a href="#">c</a></h3>
                                     <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
                                     <a class="preview" href="../assets/images/course2.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>
+                                    <button class="btn btn-primary">Enroll</button>
                                 </div> 
                             </div>
                         </div>           
@@ -74,6 +78,7 @@
                                     <h3><a href="#">d</a></h3>
                                     <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
                                     <a class="preview" href="../assets/images/course1.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>
+                                    <button class="btn btn-primary">Enroll</button>
                                 </div> 
                             </div>
                         </div>      
@@ -87,6 +92,7 @@
                                     <h3><a href="#">e</a></h3>
                                     <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
                                     <a class="preview" href="../assets/images/course2.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>
+                                    <button class="btn btn-primary">Enroll</button>
                                 </div> 
                             </div>
                         </div>         
@@ -100,6 +106,7 @@
                                     <h3><a href="#">f</a></h3>
                                     <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
                                     <a class="preview" href="../assets/images/course3.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>
+                                    <button class="btn btn-primary">Enroll</button>
                                 </div> 
                             </div>
                         </div>          
@@ -113,6 +120,7 @@
                                     <h3><a href="#">g</a></h3>
                                     <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
                                     <a class="preview" href="../assets/images/course3.jpg" rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>
+                                    <button class="btn btn-primary">Enroll</button>
                                 </div> 
                             </div>
                         </div>          
