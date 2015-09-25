@@ -1,9 +1,10 @@
+<div class="reg-page">
 	<div class="row well text-center">
 		<div class="col-sm-6">
 		<?php if(logged_in()){?>
 				<?php echo anchor('student/choose_my_schedule','<span class="glyphicon glyphicon-pencil"></span> Choose my schedule',array("class"=>"btn btn-info btn-lg", "role"=> "button"));?>
 		<?php }else{?>
-				<div class="btn btn-info btn-lg" data-toggle="modal" data-target=".choose_my_schedule_modal"><span class="glyphicon glyphicon-pencil"></span> Choose my schedule</div></td>
+				<button class="btn btn-info btn-lg" data-toggle="modal" data-target=".choose_my_schedule_modal"><span class="glyphicon glyphicon-pencil"></span> Choose my schedule</button></td>
 				
 		<?php }?>
 		</div>
@@ -12,7 +13,7 @@
 				<?php echo anchor('#','<span class="glyphicon glyphicon-blackboard"></span> Choose my teacher',array("class"=>"btn btn-info btn-lg", "role"=> "button"));?>
 		</div>
 	</div>
-	
+</div>
 				<?php echo $this->session->flashdata('msg'); ?>
 		
 	<!-- start choose schedule modal -->
@@ -42,5 +43,6 @@
 								  </div>
 								</div>
 								</div>
+
 								
 	<!-- end choose schedule modal-->
