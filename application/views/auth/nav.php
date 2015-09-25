@@ -107,8 +107,9 @@
 								  
 							<ul class="dropdown-menu" aria-labelledby="dLabel">
 
-								<li><a href="" data-toggle="modal" data-target=".register"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-								<li><?php echo anchor('login','<span class="glyphicon glyphicon-log-in"></span> Log in'); ?></li>
+								<li><a href="#">About us</a></li>
+								<li><a href="" data-toggle="modal" data-target=".register"> Sign Up</a></li>
+								<li><?php echo anchor('login',' Sign in'); ?></li>
 											
 							</ul>
 					
