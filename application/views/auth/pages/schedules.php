@@ -13,7 +13,7 @@
 				<?php echo anchor('#','<span class="glyphicon glyphicon-blackboard"></span> Choose my teacher',array("class"=>"btn btn-info btn-lg", "role"=> "button"));?>
 		</div>
 	</div>
-</div>
+
 				<?php echo $this->session->flashdata('msg'); ?>
 		
 	<!-- start choose schedule modal -->
