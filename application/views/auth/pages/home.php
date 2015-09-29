@@ -7,7 +7,7 @@
                             <div class="col-sm-6">
                                 <div class="carousel-content">
                                     <h2 class="animation animated-item-1">Welcome <span>To ESL</span></h2>
-                                    <p class="animation animated-item-2">Accusantium doloremque laudantium totam rem aperiam, eaque ipsa...</p>
+                                    <p class="animation animated-item-2">This proven method strengthens your reading, speaking, and listening all at the same time and makes learning English easy.</p>
                                     <a class="btn-slide animation animated-item-3" href="#">Read More</a>
                                 </div>
                             </div>
@@ -24,7 +24,8 @@
             </div><!--/.carousel-inner-->
         </div><!--/.carousel-->
     </section><!--/#main-slider-->
-	  
+	  <?php if (logged_in()){} else { ?>
+
 			<div class="signup">
 				  <div class="row ">
 						<div class="container">
@@ -49,7 +50,7 @@
 				  </div>
 			
 			</div>
-	  
+	<?php } ?>
 	  
 	
 	  <!-- Page Content -->

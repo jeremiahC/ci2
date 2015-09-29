@@ -20,7 +20,7 @@ class Admin extends Application
 			else{
 				
 				$this->ag_auth->view('home');
-				$this->load->view('auth/pages/templates/footer');
+				
 			}
 		  
 		}

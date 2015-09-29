@@ -36,7 +36,7 @@
 				 <div class="form-group row">
 				    <label for="date" class="col-xs-5 control-label text-right">Date <span class="text-danger">(Required)</span> </label>
 				    <div class="col-xs-7">
-				      <input type="date" class="form-control" name="date" id="datepicker" placeholder="Date">
+				      <input type="text" class="form-control" name="date" id="datepicker" placeholder="Date">
 		             <span class="text-danger"><?php echo form_error('date'); ?></span>
 		             </div>
 				  </div>
@@ -58,6 +58,7 @@
 				    <label for="time" class="col-xs-5 control-label text-right">Skype ID </label>
 				    <div class="col-xs-7">
 				      <input placeholder="Your Skype ID" type="text" class="form-control" name="user_skype"  value="<?php echo $this->session->userdata('user_skype');?>">
+				      <span class="text-danger"><?php echo form_error('user_skype'); ?></span>
 				    </div>
 				  </div>
 				  
@@ -66,7 +67,8 @@
 				  <div class="form-group row">
 				    <label for="time" class="col-xs-5 control-label text-right">Contact Number </label>
 				    <div class="col-xs-7">
-				      <input placeholder="Your contact # here..." type="text" class="form-control" name="user_contact" value="<?php echo $this->session->userdata('user_contact');?>">
+				      <input placeholder="Your contact no. here..." type="text" class="form-control" name="user_contact" value="<?php echo $this->session->userdata('user_contact');?>">
+				      <span class="text-danger"><?php echo form_error('user_contact'); ?></span>
 				    </div>
 				  </div>
 				  

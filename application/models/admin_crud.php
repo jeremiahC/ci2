@@ -2,10 +2,10 @@
 class Admin_crud extends CI_Model {
 
 	//get special schedules
-	function getSpecialSchedule(){	
+	function getSpecialSchedule($start, $limit){	
 		$this->db->select("id,username,course,date,time_start,comment,teacher,status");
 		$this->db->where('course_no','5');
-		$query = $this->db->get('enrollees');
+		$query = $this->db->get('enrollees', $start, $limit);
 		
 		return $query->result();
 	}
@@ -21,10 +21,10 @@ class Admin_crud extends CI_Model {
 		
 	}
 	
-	function getScheduleCourse1(){
+	function getScheduleCourse1($start, $limit){
 		$this->db->select("id,username,course,date,time_start,comment,teacher,status");
 		$this->db->where('course_no','1');
-		$query = $this->db->get('enrollees');
+		$query = $this->db->get('enrollees',$start, $limit);
 		
 		return $query->result();
 	}
@@ -38,10 +38,10 @@ class Admin_crud extends CI_Model {
 	}
 	
 	
-	function getScheduleCourse2(){
+	function getScheduleCourse2($start, $limit){
 		$this->db->select("id,username,course,date,time_start,comment,teacher,status");
 		$this->db->where('course_no','2');
-		$query = $this->db->get('enrollees');
+		$query = $this->db->get('enrollees',$start, $limit);
 		
 		return $query->result();
 	}
@@ -54,10 +54,10 @@ class Admin_crud extends CI_Model {
 		return $query->num_rows();
 	}
 	
-	function getScheduleCourse3(){
+	function getScheduleCourse3($start, $limit){
 		$this->db->select("id,username,course,date,time_start,comment,teacher,status");
 		$this->db->where('course_no','3');
-		$query = $this->db->get('enrollees');
+		$query = $this->db->get('enrollees',$start, $limit);
 		
 		return $query->result();
 	}
@@ -70,10 +70,10 @@ class Admin_crud extends CI_Model {
 		return $query->num_rows();
 	}
 
-	function getVisitorSchedule(){
+	function getVisitorSchedule($start, $limit){
 		$this->db->select("id,username,course,date,time_start,comment,teacher,status");
 		$this->db->where('membership','visitor');
-		$query = $this->db->get('enrollees');
+		$query = $this->db->get('enrollees', $start,$limit);
 		return $query->result();
 	}
 	

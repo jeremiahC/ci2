@@ -33,7 +33,6 @@ class Dashboard extends Application
             $this->data['schedules3'] = $this->Schedules_model->getScheduleCourse3();
             
 			$this->ag_auth->view('teacher/profile', $this->data);
-			$this->load->view('auth/pages/templates/footer');
 		}
 		else
 		{

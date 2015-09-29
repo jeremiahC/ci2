@@ -70,5 +70,3 @@
 		</div>
 	</div>
 </section>
-
-	<?php $this->load->view('auth/pages/templates/footer'); ?>

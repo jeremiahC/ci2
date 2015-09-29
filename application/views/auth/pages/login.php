@@ -4,7 +4,6 @@
  	<div class="container" id="login">
 		
 		<h2>Login</h2>
-		
 		<div class="row login-wrap">
 			<div class="col-md-6">
  			
@@ -38,4 +37,3 @@
 	
 	
 </section>
-	<?php $this->load->view('auth/pages/templates/footer'); ?>

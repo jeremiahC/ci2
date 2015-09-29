@@ -38,8 +38,8 @@
 										<div class="panel-body">
 												<ul class="nav nav-pills nav-stacked" role="tablist">
 														<li role="presentation"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Self Information</a></li>
+														<li role="presentation"><a href="#setSchedule" aria-controls="messages" role="tab" data-toggle="tab">Set schedule</a></li>
 														<li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">My Schedule</a></li>
-														<li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Enrolled courses<span class="badge">2</span></a></li>
 														<li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Appointments<span class="badge">5</span></a></li>
 												</ul>
 										</div>
@@ -85,8 +85,6 @@
 																			(Temporary)
 																		</div>
 																
-																<?php echo $this->session->flashdata('msg'); ?>
-																
 																<table class="table  table-hover text-center">
 																			  <tr class="lead">
 																					  <td>Course</td>
@@ -117,7 +115,12 @@
 																</div>
 																
 												  </div>
-												  <div role="tabpanel" class="tab-pane" id="messages"><p>asdfasdf3</p></div>
+												  <div role="tabpanel" class="tab-pane text-center" id="setSchedule">
+												  			
+														<?php echo anchor('teacher/set_schedule','Set schedule',array("class"=>"btn btn-primary btn-lg", "role"=> "button"));?>									  
+																									  
+																									  
+												  </div>
 												  
 												  
 												  <div role="tabpanel" class="tab-pane" id="settings">

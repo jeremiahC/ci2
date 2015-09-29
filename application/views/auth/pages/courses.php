@@ -2,7 +2,7 @@
 	<section id="portfolio">	
         <div class="container text-center">
             <div class="center">
-               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt</p>
+               <p>This proven method strengthens your reading, speaking, and listening all at the same time and makes learning English easy.</p>
             </div>
 
             <ul class="portfolio-filter text-center">

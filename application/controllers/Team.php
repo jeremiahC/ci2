@@ -8,7 +8,6 @@ class Team extends CI_Controller
     	
         $this->load->view('templates/header');
         $this->load->view('team');
-        $this->load->view('templates/footer');
     }
 }
 ?>

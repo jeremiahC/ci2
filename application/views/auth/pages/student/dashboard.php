@@ -85,8 +85,6 @@
 																					(Temporary)
 																				</div>
 																		
-																		<?php echo $this->session->flashdata('msg'); ?>
-																		
 																		<table class="table  table-hover text-center">
 																			  <tr class="lead">
 																					  <td>Course</td>
@@ -102,18 +100,20 @@
 																					  <?php foreach ($schedules as $schedule){?>
 																									<tr>
 																										<td><?php echo $schedule->course; ?></td>
-																										<td><?php echo $schedule->date; ?></td>
+																										<td id="date"><?php echo $schedule->date; ?></td>
 																										<td><?php echo $schedule->time_start; ?></td>
 																										<td><?php echo $schedule->status; ?></td>
 																										<!--  To be ask if we put cancel button -->
 																										 <!--  <td> Cancel</td> -->
 																									</tr>
 																							
-																			   
+																			   					
 																			  		 <?php } ?>
+																						
 																						
 																								
 																					</table>
+																					<?php echo $pagination; ?>
 																		</div>
 																		
 														</div>
@@ -130,4 +130,11 @@
 		</div>
 
 		</div><!--/container-->
+		<script>
+		//variable to get current date
+		$currentDate = date('Y-m-d'); 
+		
+			$( "tr" ).addClass("footer2");
+	
+		</script>
 

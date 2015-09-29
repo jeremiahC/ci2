@@ -8,7 +8,6 @@ class General_information extends CI_Controller
     	
         $this->load->view('templates/header');
         $this->load->view('general_information');
-        $this->load->view('templates/footer');
     }
 }
 ?>

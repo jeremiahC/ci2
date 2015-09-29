@@ -25,7 +25,6 @@ public function index()
 
 	
 		$this->ag_auth->view('teacher/set_schedule');
-		$this->load->view('auth/pages/templates/footer');
 		
 		
 }
@@ -48,7 +47,6 @@ public function save(){
 		
 		$this->session->set_flashdata('msg','<div class="alert alert-danger text-center">Error.</div>');
 		$this->ag_auth->view('teacher/set_schedule');
-		$this->load->view('auth/pages/templates/footer');
 	}
 	else
 	{

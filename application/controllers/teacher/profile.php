@@ -31,7 +31,6 @@ class Profile extends Application
 			$this->data['appointments'] = $this->Schedules_model->getAppointments();
             
 			$this->ag_auth->view('teacher/dashboard', $this->data);
-			$this->load->view('auth/pages/templates/footer');
 		}
 		else
 		{
@@ -45,7 +44,6 @@ class Profile extends Application
 	public function form()
 	{
         $this->ag_auth->view('upload_form', array('error' => ' ' ));
-		$this->load->view('auth/pages/templates/footer');
     }
 	
 	public function edit(){
@@ -98,6 +96,8 @@ class Profile extends Application
 	
 		}
 	}
+	
+	
 
 
 }

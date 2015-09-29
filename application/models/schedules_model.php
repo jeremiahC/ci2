@@ -166,7 +166,7 @@ class Schedules_model extends CI_Model {
 		$this->db->select("*");
 		$this->db->where('username',$user);
 		$this->db->from('enrollees');
-		$this->db->order_by("date", "desc");
+		$this->db->order_by("date", "asc");
 		$query = $this->db->get();
 		return $query->result();
 		
@@ -229,13 +229,24 @@ class Schedules_model extends CI_Model {
 		$this->db->insert('enrollees', $schedule);
 		return true;
 	}
+	function getScheduleCount(){
+		$this->db->select('*');
+		$user=$this->session->userdata('username');
+		$this->db->where('username',$user);
+		$query = $this->db->get('enrollees');
 	
+		return $query->num_rows();
+	
+	
+	}
 	//this will get schedules of students to profile
-	function getSchedules(){
+	function getSchedules($start, $limit){
 		$user=$this->session->userdata('username');
 		$this->db->select("id,username,course,date,time_start,teacher,status");
 		$this->db->where('username',$user);
-		$query = $this->db->get('enrollees');
+		$this->db->order_by("date", "desc");
+		$query = $this->db->get('enrollees',$start, $limit);
+		
 		return $query->result();
 	}
 	

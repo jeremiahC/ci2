@@ -20,7 +20,6 @@ class Editprofile extends Application
 		{
 			$this->data['information'] = $this->edit_my_profile->getInfo();
 			$this->ag_auth->view('student/editprofile', $this->data);
-			$this->load->view('auth/pages/templates/footer');
 		}
 		else
 		{

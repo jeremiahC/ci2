@@ -22,7 +22,7 @@
 							  echo anchor('home/dashboard','Admin Panel');
 					 else{
 					  
-							  echo anchor('courses','<span>ESL</span>Project');
+							  echo anchor('home','<span>ESL</span>Project');
 					 }
 					?>
 				</h1>
@@ -33,7 +33,7 @@
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav nav-tabs navbar-right">
 					<li><?php echo anchor('courses','Courses'); ?> </li>
-					<!--<li><?php //echo anchor('schedules','Schedules'); ?></li>-->
+					<li><?php echo anchor('schedules','Schedules'); ?></li>
 					<li><?php echo anchor('promos','Promos'); ?></li>
 					
 					<li class="dropdown">
@@ -54,7 +54,6 @@
 										   else{}
 									 ?>
 								</li>
-								<li><?php echo anchor('schedules','My Schedules'); ?><li>
 								<li><a href="#">Settings</a><li>
 								<li><?php echo anchor('logout', 'Logout'); ?></li>
 								
@@ -68,7 +67,7 @@
 		  </div><!-- /.container-fluid -->
 		</div>
 	 </nav>
-
+		<br><br><br><br><br>
 	<?php
 	}
 	else
@@ -125,7 +124,7 @@
 		</div><!-- /.container -->
 		
 	</nav>
-		
+		<br><br><br><br>
 	
 		<!-- start register modal -->
 		   						

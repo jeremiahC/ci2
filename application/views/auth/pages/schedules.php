@@ -15,6 +15,25 @@
 	</div>
 
 				<?php echo $this->session->flashdata('msg'); ?>
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				<?php 
+				$this->load->view('auth/pages/course_1');
+				$this->load->view('auth/pages/course_2');
+				$this->load->view('auth/pages/course_3');
+				
+				
+				?>
 		
 	<!-- start choose schedule modal -->
 		   						

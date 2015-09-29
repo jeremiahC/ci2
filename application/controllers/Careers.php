@@ -8,7 +8,6 @@ class Careers extends CI_Controller
     	
         $this->load->view('templates/header');
         $this->load->view('careers');
-        $this->load->view('templates/footer');
     }
 }
 ?>

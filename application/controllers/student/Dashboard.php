@@ -34,7 +34,6 @@ class Dashboard extends Application
 			$this->data['schedules'] = $this->Schedules_model->getAllSchedule();
             
 			$this->ag_auth->view('student/profile_student', $this->data);
-			$this->load->view('auth/pages/templates/footer');
 		}
 		else
 		{
@@ -48,7 +47,6 @@ class Dashboard extends Application
 	public function form()
 	{
         $this->ag_auth->view('upload_form', array('error' => ' ' ));
-		$this->load->view('auth/pages/templates/footer');
     }
 	
 	

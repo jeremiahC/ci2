@@ -8,7 +8,6 @@ class Vision_mission extends CI_Controller
     	
         $this->load->view('templates/header');
         $this->load->view('vision_mission');
-        $this->load->view('templates/footer');
     }
 }
 ?>

@@ -21,7 +21,6 @@ class About_us extends Application
 		
 
 			$this->ag_auth->view('about_us');
-			$this->load->view('auth/pages/templates/footer');
 
 		
 

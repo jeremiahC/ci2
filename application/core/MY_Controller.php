@@ -73,14 +73,16 @@ class Application extends CI_Controller
 
 			if($this->ag_auth->register($username, $password, $email) === TRUE)
 			{
-				$data['message'] = "The user account has now been created.";
-				$this->ag_auth->view('message', $data);
+			echo ("<SCRIPT LANGUAGE='JavaScript'>
+			    window.alert('Succesfully Registered')
+			    window.location.href='../index.php/login';
+			    </SCRIPT>");
 				
 			} // if($this->ag_auth->register($username, $password, $email) === TRUE)
 			else
 			{
 				$data['message'] = "The user account has not been created.";
-				$this->ag_auth->view('message', $data);
+				$this->ag_auth->view('login', $data);
 			}
 
 		} // if($this->form_validation->run() == FALSE)
@@ -114,14 +116,16 @@ class Application extends CI_Controller
 	
 			if($this->ag_auth->register_teacher($username, $password, $email) === TRUE)
 			{
-				$data['message'] = "The user account has now been created.";
-				$this->ag_auth->view('message', $data);
+				echo ("<SCRIPT LANGUAGE='JavaScript'>
+			    window.alert('Succesfully Registered')
+			    window.location.href='../index.php/login';
+			    </SCRIPT>");
 	
 			} // if($this->ag_auth->register($username, $password, $email) === TRUE)
 			else
 			{
 				$data['message'] = "The user account has not been created.";
-				$this->ag_auth->view('message', $data);
+				$this->ag_auth->view('login', $data);
 			}
 	
 		} // if($this->form_validation->run() == FALSE)
@@ -176,7 +180,7 @@ class Application extends CI_Controller
 			else
 			{
 				$data['message'] = "The username and password did not match.";
-				$this->ag_auth->view('message', $data);
+				$this->ag_auth->view('login',$data);
 			}
 		} // if($this->form_validation->run() == FALSE)
 		

@@ -19,7 +19,6 @@ class Promos extends Application
 
 
 		$this->ag_auth->view('promos');
-		$this->load->view('auth/pages/templates/footer');
 
 	}
 

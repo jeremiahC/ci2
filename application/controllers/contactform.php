@@ -75,10 +75,7 @@ class contactform extends Application
                 redirect('contactform/index');
             }
         }
-        
-        $this->load->view('auth/pages/templates/footer');
-   
-    
+
     //custom validation function to accept only alphabets and space input
     function alpha_space_only($str)
     {

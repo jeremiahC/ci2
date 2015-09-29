@@ -21,8 +21,6 @@ if(logged_in())
 {
 
 $this->ag_auth->view('home');
-$this->load->view('auth/pages/templates/footer');
-
 }
 
 else
@@ -30,7 +28,6 @@ else
 {
 
 $this->ag_auth->view('home');
-$this->load->view('auth/pages/templates/footer');
 
 }
 

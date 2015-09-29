@@ -22,8 +22,6 @@ class Course_enroll extends Application
 		$this->data['infos'] = $this->Schedules_model->getUserInfo($username);
 		$this->data['schedules'] = $this->Schedules_model->get_course_1();
 		$this->ag_auth->view('course_1',$this->data);
-		$this->load->view('auth/pages/templates/footer');
-	
 	}
 	
 	
@@ -35,8 +33,6 @@ class Course_enroll extends Application
 	
 		$this->data['schedules'] = $this->Schedules_model->get_course_2();
 		$this->ag_auth->view('course_2',$this->data);
-		$this->load->view('auth/pages/templates/footer');
-	
 	}
 	
 	public function course3()
@@ -45,8 +41,6 @@ class Course_enroll extends Application
 	
 		$this->data['schedules'] = $this->Schedules_model->get_course_2();
 		$this->ag_auth->view('course_3',$this->data);
-		$this->load->view('auth/pages/templates/footer');
-	
 	}
 	
 	
@@ -62,11 +56,10 @@ class Course_enroll extends Application
 	
 			$this->session->set_flashdata('msg','<div class="alert alert-danger text-center">Error.</div>');
 			redirect_back();
-			$this->load->view('auth/pages/templates/footer');
 		}
 		else
 		{
-	
+			$course = $this->input->post('course');
 			$id = $this->session->userdata('id');
 			$username = $this->session->userdata('username');
 			$date = $this->input->post('date');
@@ -78,8 +71,8 @@ class Course_enroll extends Application
 			$course_no= $this->input->post('course_no');
 	
 				
-	
 			$enroll = array(
+					'course' => $course,
 					'username' => $username,
 					'date' => $date,
 					'TIME_START' => $time,
@@ -122,8 +115,6 @@ class Course_enroll extends Application
 			
 		
 			$this->ag_auth->view('visitor/visitor_enroll',$data);
-			$this->load->view('auth/pages/templates/footer');
-			
 		}
 	}
 	
@@ -150,7 +141,6 @@ class Course_enroll extends Application
 			
 			$this->session->set_flashdata('msg','<div class="alert alert-danger text-center">Error.</div>');
 			$this->ag_auth->view('visitor/visitor_enroll',$data);
-			$this->load->view('auth/pages/templates/footer');
 		}
 		else
 		{
@@ -197,7 +187,6 @@ class Course_enroll extends Application
 		}
 		else{
 			$this->ag_auth->view('visitor/success_enroll');
-			$this->load->view('auth/pages/templates/footer');
 		}
 		
 		
