@@ -1,5 +1,5 @@
 
-<div class=" feature">
+<div class="reg-page">
 		<div class="container ">
 				teacher
 				<div class="row ">

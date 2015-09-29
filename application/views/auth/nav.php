@@ -67,7 +67,7 @@
 		  </div><!-- /.container-fluid -->
 		</div>
 	 </nav>
-		<br><br><br><br><br>
+
 	<?php
 	}
 	else

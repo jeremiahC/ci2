@@ -68,7 +68,7 @@ class Profile extends Application
 			
             
 			$this->ag_auth->view('student/dashboard', $this->data);
-			$this->load->view('auth/pages/templates/footer');
+
 		}
 		else
 		{
