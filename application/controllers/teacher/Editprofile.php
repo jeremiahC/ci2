@@ -20,7 +20,7 @@ class Editprofile extends Application
 		if(logged_in())
 		{
 			$this->data['information'] = $this->edit_my_profile->getInfo();
-			$this->ag_auth->view('student/editprofile', $this->data);
+			$this->ag_auth->view('teacher/editprofile', $this->data);
 		}
 		else
 		{
@@ -73,7 +73,7 @@ class Editprofile extends Application
 			$this->edit_my_profile->updateInfo($data);
 			$this->session->set_flashdata('msg','<div class="alert alert-success text-center">Save successfully!</div>');
 	
-			redirect('student/dashboard');
+			redirect('teacher/dashboard');
 	
 		}
 	}

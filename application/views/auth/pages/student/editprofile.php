@@ -156,9 +156,7 @@
 					</div>
 					
 				</div>
-<br>
-<br>
-<br>
+				
 			
 <?php }else {
 }

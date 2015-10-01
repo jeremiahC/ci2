@@ -4,7 +4,8 @@
 class edit_my_profile extends CI_Model {
 
 	function getInfo(){
-		$this->db->select("id,username,user_name,user_lastname,user_bio,user_contact,user_age,user_education,user_skype");
+		$username = $this->session->userdata('username');
+		$this->db->where('username',$username);
 		$query = $this->db->get('users');
 		return $query->result();
 	}

@@ -124,7 +124,7 @@
 		</div><!-- /.container -->
 		
 	</nav>
-		<br><br><br><br>
+
 	
 		<!-- start register modal -->
 		   						

@@ -64,7 +64,10 @@
 																		<p><strong>Contact Number:</strong> &nbsp<u><?php echo $informations->user_contact;?></u> </p>
 																		<p><strong>Skype: </strong> &nbsp<u><?php echo $informations->user_skype;?></u>
 																		
-																		
+																<div class="">
+																		<?php echo anchor('teacher/Editprofile','<button class="btn btn-primary">Edit Profile</button>');?>
+																</div>
+																				
 																
 																			
 																	

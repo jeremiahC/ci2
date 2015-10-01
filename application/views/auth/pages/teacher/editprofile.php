@@ -29,10 +29,10 @@
 			</h1>
 <br>
 <br>
-		<div class="form-group">
-			
-				<label for="firstname" class="col-lg-3 control-label">First name: &nbsp<font color="red">(Required)</font></label>
-				
+		<div class="form-group row">
+				<div class="col-lg-4">
+				<label for="firstname" class="control-label">First name: &nbsp<font color="red">(Required)</font></label>
+				</div>
 				<div class="col-lg-8">
 
 					<input id="firstname" name="firstname" type="text" class="form-control" value="<?php echo $informations->user_name;?>">
@@ -43,10 +43,10 @@
 				
 		</div>
 			
-		<div class="form-group">
-		
-				<label for="lastname" class="col-lg-3 control-label">Last name: &nbsp<font color="red">(Required)</font></label>
-				
+		<div class="form-group row">
+				<div class="col-lg-4">
+				<label for="lastname" class=" control-label">Last name: &nbsp<font color="red">(Required)</font></label>
+				</div>
 				 <div class="col-lg-8">
 
 					<input id="lastname" name="lastname" type="text" class="form-control" value="<?php echo $informations->user_lastname;?>">
@@ -58,10 +58,10 @@
 				
 		</div>
 
-		<div class="form-group">
-		
-				<label for="bio" class="col-lg-3 control-label">About Yourself:</label>
-				
+		<div class="form-group row">
+				<div class="col-lg-4">
+				<label for="bio" class=" control-label">About Yourself:</label>
+				</div>
 				<div class="col-lg-8">
 				
 					<textarea id="bio" name="bio" type="text" class="form-control" rows="3" value="<?php echo $informations->user_bio;?>"></textarea>
@@ -72,11 +72,11 @@
 
 		</div>
 
-		<div class="form-group target">
-		
-				<label for="education" class="col-lg-1 control-label">Age:</font></label>
-				
-				<div class="col-lg-5">
+		<div class="form-group target row">
+				<div class="col-lg-4">
+				<label for="education" class=" control-label">Age:</font></label>
+				</div>
+				<div class="col-lg-8">
 				
 					<input id="age" name="age" type="text" class="form-control"value="<?php echo $informations->user_age;?>" />
 					
@@ -86,10 +86,10 @@
 				
 			</div>
 
-		<div class="form-group target">
-		
-				<label for="education" class="col-lg-1 control-label">Educational Attainment:</label>
-				
+		<div class="form-group target row">
+				<div class="col-lg-4">
+				<label for="education" class=" control-label">Educational Attainment:</label>
+				</div>
 				<div class="col-lg-8">
 				
 					<input id="education" name="education" type="text" class="form-control" value="<?php echo $informations->user_education;?>" />
@@ -111,10 +111,10 @@
 			
 <br>
  
-			<div class="form-group target">
-			
-				<label for="contact" class="col-lg-3 control-label">Contact Number:</label>
-				
+			<div class="form-group target row">
+				<div class="col-lg-4">
+				<label for="contact" class=" control-label">Contact Number:</label>
+				</div>
 				<div class="col-lg-8">
 				
 					<input id="contact" name="contact" class="form-control" type="text"value="<?php echo $informations->user_contact;?>" /> 
@@ -125,10 +125,10 @@
 				
 			</div>
 			
-			<div class="form-group">
-			
-				<label for="skype" class="col-lg-3 control-label">Skype Account: &nbsp<font color="red">(Required)</font></label>
-				
+			<div class="form-group row">
+			<div class="col-lg-4">
+				<label for="skype" class=" control-label">Skype Account: &nbsp<font color="red">(Required)</font></label>
+				</div>
 				<div class="col-lg-8">
 				
 					<input id="skype" name="skype" class="form-control" type="text" value="<?php echo $informations->user_skype;?>"/> 
@@ -140,11 +140,11 @@
 			</div>
 			
 
-			<div class="form-group">
+			<div class="form-group row">
 			
-					<label class="col-md-4 control-label"></label>
+					<label class=" control-label"></label>
 					
-					<div class="col-md-8">
+					<div class="col-lg-8">
 					
 						<input id="btn_add" type="submit"
 						
