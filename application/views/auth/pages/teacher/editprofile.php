@@ -6,7 +6,7 @@
             
 <!-- left column -->
 
-<?php echo form_open('student/Editprofile/edit');?>
+<?php echo form_open('teacher/Editprofile/edit');?>
 
 <?php foreach ($information as $informations){
 	
@@ -151,7 +151,7 @@
 							class="btn btn-primary" value="Save Changes"> <span class=""></span>
 							
 
-						<input id="btn_cancel" name="btn_cancel" class="btn btn-danger" value="Cancel" type="reset">
+						<a href="<?= base_url();?>index.php/student/profile" class="btn btn-danger">Cancel</a>
 						
 					</div>
 					

@@ -73,7 +73,7 @@ class Editprofile extends Application
 			$this->edit_my_profile->updateInfo($data);
 			$this->session->set_flashdata('msg','<div class="alert alert-success text-center">Save successfully!</div>');
 	
-			redirect('teacher/dashboard');
+			redirect('teacher/profile');
 	
 		}
 	}

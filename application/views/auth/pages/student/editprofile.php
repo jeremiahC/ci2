@@ -151,7 +151,7 @@
 							class="btn btn-primary" value="Save Changes"> <span class=""></span>
 							
 
-						<a href="<?= base_url();?>index.php/student/dashboard" class="btn btn-danger">Cancel</a>
+						<a href="<?= base_url();?>index.php/student/profile" class="btn btn-danger">Cancel</a>
 						
 					</div>
 					

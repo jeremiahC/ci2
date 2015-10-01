@@ -72,7 +72,7 @@ class Editprofile extends Application
 			$this->edit_my_profile->updateInfo($data);
 			$this->session->set_flashdata('msg','<div class="alert alert-success text-center">Your informations has been successfully edited!</div>');
 			/* $this->ag_auth->view('student/editprofile'); */
-			redirect('student/dashboard');
+			redirect('student/profile');
 		}
 	}
 	
