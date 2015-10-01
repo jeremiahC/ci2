@@ -33,7 +33,7 @@ class Dashboard extends Application
             
 			$this->data['schedules'] = $this->Schedules_model->getAllSchedule();
             
-			$this->ag_auth->view('student/profile_student', $this->data);
+			$this->ag_auth->view('student/dashboard', $this->data);
 		}
 		else
 		{

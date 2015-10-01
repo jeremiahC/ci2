@@ -151,12 +151,12 @@
 							class="btn btn-primary" value="Save Changes"> <span class=""></span>
 							
 
-						<input id="btn_cancel" name="btn_cancel" class="btn btn-danger" value="Cancel" type="reset">
+						<a href="<?= base_url();?>index.php/student/dashboard" class="btn btn-danger">Cancel</a>
 						
 					</div>
 					
 				</div>
-				
+
 			
 <?php }else {
 }
