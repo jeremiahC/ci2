@@ -18,7 +18,7 @@ class Editprofile extends Application
 	{
 		if(logged_in())
 		{
-			$this->data['information'] = $this->edit_my_profile->getInfo();
+			$this->data['informations'] = $this->edit_my_profile->getInfo();
 			$this->ag_auth->view('student/editprofile', $this->data);
 		}
 		else
@@ -35,12 +35,13 @@ class Editprofile extends Application
 		$this->form_validation->set_rules('firstname', 'First name' ,'trim|required|xss_clean|callback_alpha_only_space');
 		$this->form_validation->set_rules('lastname', 'Last name' ,'trim|required|xss_clean|callback_alpha_only_space');
 		$this->form_validation->set_rules('skype', 'Skype Account','trim|required');
+		$this->form_validation->set_rules('contact', 'Skype Account','trim|required');
 	
-		if($this->form_validation->run() == false)
+		if($this->form_validation->run() == FALSE)
 		{
 			$this->session->set_flashdata('msg','<div class="alert alert-danger text-center">Try again ! Please fill up correctly..</div>');
-			redirect('student/editprofile');
-			/* $this->ag_auth->view('editprofile'); */
+			$this->data['informations'] = $this->edit_my_profile->getInfo();
+			$this->ag_auth->view('student/editprofile',$this->data);
 		}
 		else
 		{
@@ -70,8 +71,7 @@ class Editprofile extends Application
 	
 	
 			$this->edit_my_profile->updateInfo($data);
-			$this->session->set_flashdata('msg','<div class="alert alert-success text-center">Your informations has been successfully edited!</div>');
-			/* $this->ag_auth->view('student/editprofile'); */
+			$this->session->set_flashdata('msgEditProf','<div class="alert alert-success text-center">Your informations has been save successfully!</div>');
 			redirect('student/profile');
 		}
 	}
