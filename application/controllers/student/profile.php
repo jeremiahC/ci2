@@ -63,12 +63,11 @@ class Profile extends Application
 				$this->edit_my_profile->do_upload();
 			}
 			
-			$this->data['information'] = $this->edit_my_profile->getInfo();
+			$this->data['informations'] = $this->edit_my_profile->getInfo();
 			$this->data['images'] = $this->edit_my_profile->get_image();
 			
             
 			$this->ag_auth->view('student/dashboard', $this->data);
-
 		}
 		else
 		{
