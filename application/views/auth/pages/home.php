@@ -1,7 +1,7 @@
 <section id="main-slider" class="no-margin">
         <div class="carousel slide">      
             <div class="carousel-inner">
-                <div class="item active" style="background-image: url(/ci2/assets/images/background_02.jpg)">
+                <div class="item active" style="background-image: url(/ci2/assets/images/esl.jpg); height:1000px;">
                     <div class="container">
                         <div class="row slide-margin">
                             <div class="col-sm-6">
@@ -38,13 +38,13 @@
 									<div class="col-xs-12 col-sm-12 col-md-12 ">
 										  <div class="col-md-6">
 												
-												<?php echo anchor('register','Student',array("class"=>"btn btn-primary btn-lg", "role"=> "button"));?>
+												<?php echo anchor('register','<button class="btn btn-primary">Student<span><img src="../assets/images/student.png" style="height:100px; width:100px;"></span></button>');?>
 										  </div>
 												
 										  <div class="col-md-6">
-												<?php echo anchor('register_teacher','Teacher',array("class"=>"btn btn-primary btn-lg", "role"=> "button"));?>
+												<?php echo anchor('register_teacher','<button class="btn btn-primary">Teacher<span><img src="../assets/images/teacher.png" style="height:100px; width:100px;"></span></button>');?>
 										  </div>
-										  <p class="text-muted">Already a member?<?php echo anchor('login',' Login');?></p> 
+										  <!--<p class="text-muted">Already a member?<?php echo anchor('login',' Login');?></p> -->
 									</div>			  
 						</div>	
 				  </div>
@@ -54,20 +54,20 @@
 	  
 	
 	  <!-- Page Content -->
-	 <div class="about">
-				  <div class="feature">
-						<div class="container">
-							<div class="row text-center">
+		<div class="about">
+				<div class="container">
+						
+						<div class="row text-center">
 								<div class="col-xs-12 col-sm-6 col-md-3">
 									<div class="hi-icon-wrap hi-icon-effect wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms" >
-										<i class="fa fa-book"></i>	
+										<i class="fa fa-user"></i>	
 										<h2>Register</h2>
 										<p>Some text here, here too. Some text here, here too. Some text here, here too. Some text here, here too. Some text here, here too.</p>
 									</div>
 								</div>
 								<div class="col-xs-12 col-sm-6 col-md-3">
 									<div class="hi-icon-wrap hi-icon-effect wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms" >
-										<i class="fa fa-laptop"></i>	
+										<i class="fa fa-search"></i>	
 										<h2>Find Courses</h2>
 										<p>Some text here, here too. Some text here, here too. Some text here, here too. Some text here, here too. Some text here, here too.</p>
 									</div>
@@ -75,21 +75,21 @@
 								<div class="col-xs-12 col-sm-6 col-md-3">
 									<div class="hi-icon-wrap hi-icon-effect wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="900ms" >
 										<i class="fa fa-heart-o"></i>	
-										<h2>Teach</h2>
+										<h2>Learn</h2>
 										<p>Some text here, here too. Some text here, here too. Some text here, here too. Some text here, here too. Some text here, here too.</p>
 									</div>
 								</div>
 								<div class="col-xs-12 col-sm-6 col-md-3">
 									<div class="hi-icon-wrap hi-icon-effect wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="1200ms" >
-										<i class="fa fa-cloud"></i>	
+										<i class="fa fa-check"></i>	
 										<h2>Done</h2>
 										<p>Some text here, here too. Some text here, here too. Some text here, here too. Some text here, here too. Some text here, here too.</p>
 									</div>
 								</div>
-							</div>
 						</div>
-					</div>
-			</div>
+						
+				</div>
+		</div>
 			
 	<!--  <div class="container">
 			<!-- Portfolio Section -->
