@@ -96,7 +96,6 @@
 				<ul class="nav nav-tabs navbar-right">
 					
 					<li><?php echo anchor('courses','Courses'); ?> </li>
-					<li><?php echo anchor('schedules','Schedules'); ?></li>
 					<li><?php echo anchor('promos','Promos'); ?></li>
 					<li class="dropdown">
 						
