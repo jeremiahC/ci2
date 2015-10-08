@@ -1,4 +1,4 @@
-
+<div class="reg-page">
 	<section id="portfolio">	
         <div class="container text-center">
             <div class="center">
@@ -129,3 +129,5 @@
             </div>
         </div>
     </section><!--/#portfolio-item-->
+</div>    
+ 
