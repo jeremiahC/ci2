@@ -11,16 +11,29 @@
                 <li>
                     <a href="#" class="user anim" id="start" style="background:#98bf21; width: 10px;">Users</a>
 						<ul class="drop">
-								<li class=><a href="#">Admin</a></li>
-								<li><a href="#">Students</a></li>
-								<li><a href="#">Teachers</a></li>
+								<li><?php echo anchor('admin/crud/users','Admin');?></li>
+								<li><?php echo anchor('admin/crud/teachers','Teachers');?></li>
+					      		<li><?php echo anchor('admin/crud/admins','Students');?></li>
 						</ul>
                 </li>
                 <li>
-                    <a href="#"style="background:#4DB8FF; width: 10px;">Courses</a>
+                    <a href="#" class="user anim" style="background:#4DB8FF; width: 10px;">Courses</a>
+						<ul class="drop">
+								<li><?php echo anchor('admin/crud/course_1','Course Name 1');?></li>
+					      		<li><?php echo anchor('admin/crud/course_2','Course Name 2');?></li>
+					      		<li><?php echo anchor('admin/crud/course_3','Course Name 3');?></li>
+						</ul>
+
                 </li>
                 <li>
-                    <a href="#" style="background:#fff; width: 10px;">Schedules</a>
+                    <a href="#" class="user anim" style="background:#fff; width: 10px;">Schedules</a>
+						<ul class="drop">
+								<li><?php echo anchor('admin/crud/course1_enrollees','Course Name 1');?></li>
+					      		<li><?php echo anchor('admin/crud/course2_enrollees','Course Name 2');?></li>
+					      		<li><?php echo anchor('admin/crud/course3_enrollees','Course Name 3');?></li>
+					      		<li><?php echo anchor('admin/crud/special_schedules','Special Schedules');?></li>
+					      		<li><?php echo anchor('admin/crud/visitor_schedules','Visitors Schedules');?></li>
+						</ul>
                 </li>
             </ul>
         </div>
