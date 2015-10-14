@@ -1,81 +1,48 @@
-		
-		<div class="collapse navbar-collapse navbar-ex1-collapse ">
-		  
-                <div class="nav navbar-nav side-nav well">
-                
-                <legend><strong class="text-info text-justify">DASHBOARD</strong></legend>
-                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-					  <div class="panel panel-info">
-					    <div class="panel-heading" role="tab" id="headingOne">
-					      <h4 class="panel-title">
-					        <span class="glyphicon glyphicon-user pull-left	"></span>
-					        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-					          Users
-					        </a>
-					        <span class=" pull-right glyphicon glyphicon-menu-hamburger" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne"></span>
-					      </h4>
-					    </div>
-					    <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
-					      <div class="list-group text-center">
-					      		<ul class="list-unstyled">
-					      			<li><?php echo anchor('admin/crud/users','Admin',array('class'=>'side-nav-a'));?></li>
-					      			<li><?php echo anchor('admin/crud/teachers','Teachers',array('class'=>'side-nav-a'));?></li>
-					      			<li><?php echo anchor('admin/crud/admins','Students',array('class'=>'side-nav-a'));?></li>
-					      		</ul>
-					      		
-					       </div>
-					    </div>
-					  </div>
-					  <div class="panel panel-info">
-					    <div class="panel-heading" role="tab" id="headingTwo">
-					      <h4 class="panel-title">
-					      	<span class="glyphicon glyphicon-blackboard pull-left"></span>
-					        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-					          Courses
-					        </a>
-					        <span class=" pull-right glyphicon glyphicon-menu-hamburger" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo"></span>
-					      
-					      </h4>
-					    </div>
-					    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-					     <div class="list-group">
-					      		<ul class="list-unstyled text-center">
-					      			<li><?php echo anchor('admin/crud/course_1','Course Name 1',array('class'=>'side-nav-a'));?></li>
-					      			<li><?php echo anchor('admin/crud/course_2','Course Name 2',array('class'=>'side-nav-a'));?></li>
-					      			<li><?php echo anchor('admin/crud/course_3','Course Name 3',array('class'=>'side-nav-a'));?></li>
-					      		</ul>
-					       </div>
-					    </div>
-					  </div>
-					  <div class="panel panel-info">
-					    <div class="panel-heading" role="tab" id="headingThree">
-					      <h4 class="panel-title">
-					      <span class="glyphicon glyphicon-certificate pull-left"></span>
-					        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-					          Enrollees
-					        </a>
-					        <span class=" pull-right glyphicon glyphicon-menu-hamburger" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree"></span>
-					      
-					      </h4>
-					    </div>
-					    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-					      <div class="list-group">
-					        	<ul class="list-unstyled text-center">
-					      			<li><?php echo anchor('admin/crud/course1_enrollees','Course Name 1',array('class'=>'side-nav-a'));?></li>
-					      			<li><?php echo anchor('admin/crud/course2_enrollees','Course Name 2',array('class'=>'side-nav-a'));?></li>
-					      			<li><?php echo anchor('admin/crud/course3_enrollees','Course Name 3',array('class'=>'side-nav-a'));?></li>
-					      			<li><?php echo anchor('admin/crud/special_schedules','Special Schedules',array('class'=>'side-nav-a'));?></li>
-					      			<li><?php echo anchor('admin/crud/visitor_schedules','Visitors Schedules',array('class'=>'side-nav-a'));?></li>
-					      		</ul>
-					        </div>
-					    </div>
-					  </div>
-					</div>
-                  
-                </div>
-                
-                
-                
-            </div>
-            <!-- /.navbar-collapse -->
- 
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="#">
+                        Admin Dashboard
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="user anim" id="start" style="background:#98bf21; width: 10px;">Users</a>
+						<ul class="drop">
+								<li class=><a href="#">Admin</a></li>
+								<li><a href="#">Students</a></li>
+								<li><a href="#">Teachers</a></li>
+						</ul>
+                </li>
+                <li>
+                    <a href="#"style="background:#4DB8FF; width: 10px;">Courses</a>
+                </li>
+                <li>
+                    <a href="#" style="background:#fff; width: 10px;">Schedules</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+				<div class="reg-page">
+						<div class="container-fluid">
+							<div class="row">
+								<div class="col-lg-12">
+										<a href="#menu-toggle" class="glyphicon glyphicon-menu-hamburger" id="menu-toggle"></a>
+										<h1>Welcome Admin!</h1>
+										<p>This template has a responsive menu toggling system. The menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will appear/disappear. On small screens, the page content will be pushed off canvas.</p>
+										<p>Make sure to keep all page content within the <code>#page-content-wrapper</code>.</p>
+										
+								</div>
+							</div>
+						</div>
+				</div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
