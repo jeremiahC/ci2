@@ -98,7 +98,8 @@
 				<a href="" class="scrollup"><i class="fa fa-angle-up fa-3x"></i></a>
 		</div>
 </footer>
-
+    </div>
+    <!-- /#wrapper -->
 
 		<script src="<?php echo base_url(); ?>assets/js/jquery.prettyPhoto.js"></script>
 		<script src="<?php echo base_url(); ?>assets/js/jquery.isotope.min.js"></script>  
@@ -125,7 +126,42 @@
 									} 
 								}
 								);
+
 				});
+				$(document).ready(function(){
+						
+					});
+				
+				$(function () {
+						$('[data-toggle="popover"]').popover()
+					  });
+				
+				$("#menu-toggle").click(function(e) {
+						e.preventDefault();
+						$("#wrapper").toggleClass("toggled");
+					});
+
+				$(this).ready( function() {  
+					$("#id").autocomplete({  
+						minLength: 1,  
+						source:   
+						function(req, add){  
+							$.ajax({  
+								url: "<?php echo base_url(); ?>index.php/admin/crud/searchCourse1",  
+								dataType: 'json',  
+								type: 'POST',  
+								data: req,  
+								success:      
+								function(data){  
+									if(data.response =="true"){  
+										add(data.message);  
+									}  
+								},  
+							});  
+						},  
+						 
+					});  
+				});  
 
 	    </script>
 
